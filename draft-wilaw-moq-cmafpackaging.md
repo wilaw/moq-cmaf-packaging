@@ -24,8 +24,8 @@ venue:
 
 author:
  -
-    fullname: Your Name Here
-    organization: Your Organization Here
+    fullname: "Will Law"
+    organization: "Akamai"
     email: "wilaw@akamai.com"
 
 normative:
@@ -35,7 +35,7 @@ informative:
 
 --- abstract
 
-TODO Abstract
+Packaging CMAF content for use with moq-transport
 
 
 --- middle
