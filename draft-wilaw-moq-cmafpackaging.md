@@ -11,9 +11,8 @@ v: 3
 area: "Applications and Real-Time"
 workgroup: "Media Over QUIC"
 keyword:
- - next generation
- - unicorn
- - sparkling distributed ledger
+ - moq
+ - cmaf
 venue:
   group: "Media Over QUIC"
   type: "Working Group"
