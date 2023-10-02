@@ -26,7 +26,8 @@ author:
     fullname: "Will Law"
     organization: "Akamai"
     email: "wilaw@akamai.com"
-  -
+    
+ -
     fullname: "Luke Curley"
     email: kixelated@gmail.com
 
