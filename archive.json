@@ -1,0 +1,86 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2024-04-16T00:49:38.420413+00:00",
+  "repo": "wilaw/moq-cmaf-packaging",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOKMYgSs510URC",
+      "title": "MOQT object payload carries a single track?",
+      "url": "https://github.com/wilaw/moq-cmaf-packaging/issues/1",
+      "state": "CLOSED",
+      "author": "acbegen",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "This is generally true for CMAF tracks, but there is an exception. For example, CMAF allows the combination of a video track along with subtitle tracks. That is, a CMAF track could carry video plus subtitle tracks together.",
+      "createdAt": "2023-11-03T17:35:00Z",
+      "updatedAt": "2023-11-08T14:31:57Z",
+      "closedAt": "2023-11-08T14:31:57Z",
+      "comments": [
+        {
+          "author": "wilaw",
+          "authorAssociation": "OWNER",
+          "body": "Are you sure? What would the header for that track declare? CMAF spec section 7.3.2.1 \"CMAF header\" states that `\"The MovieBox shall contain exactly one track containing media data as specified in subclause 7.3.2.2.\"`",
+          "createdAt": "2023-11-03T18:03:49Z",
+          "updatedAt": "2023-11-03T18:03:49Z"
+        },
+        {
+          "author": "acbegen",
+          "authorAssociation": "NONE",
+          "body": "Checking it again, looks like I misremembered. CTA captions can be embedded in the video track (as SEI messages with the ccea brand). Beyond that, CMAF indeed requires single media tracks (DASH/HLS can still allow for multiplexed tracks if they would like to).\r\n",
+          "createdAt": "2023-11-08T14:21:28Z",
+          "updatedAt": "2023-11-08T14:21:28Z"
+        }
+      ]
+    }
+  ],
+  "pulls": []
+}
