@@ -94,7 +94,7 @@ As a MOQT Track. In this case the track MUST have only a single GROUP and a sing
 
 # Content protection and encryption
 
-The media object payloads MAY be encrypted. If the content is encrypted then Common Encryption {{CENC}} MUST be used. CMAF Track encruption MUST be applied following {{CENC}} Section 8.2. using either CENC with 'cbcs' mode (AES 128-bit keys in Cipher-block chaining mode and pattern encruption) or 'cenc' mode (AES 128-bit keys in Counter Mode). 
+The media object payloads MAY be encrypted. If the content is encrypted then Common Encryption {{CENC}} MUST be used. CMAF Track encruption MUST be applied following {{CENC}} Section 8.2. using either CENC with 'cbcs' mode (AES 128-bit keys in Cipher-block chaining mode and pattern encruption) or 'cenc' mode (AES 128-bit keys in Counter Mode).
 
 Any license acquisition information used to acquire CMAF decryption key(s) MUST be signalled by the Streaming Format, and not in the CMAF header.
 
