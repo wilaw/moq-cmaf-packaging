@@ -5,7 +5,7 @@
 Media Over QUIC                                                   W. Law
 Internet-Draft                                                    Akamai
 Intended status: Informational                                 L. Curley
-Expires: 4 April 2024                                     2 October 2023
+Expires: 17 January 2025                                    16 July 2024
 
 
                     CMAF Packaging for moq-transport
@@ -13,7 +13,7 @@ Expires: 4 April 2024                                     2 October 2023
 
 Abstract
 
-   Packaging CMAF content for use with moq-transport.
+   Packaging CMAF content for use with MoQ Transport [MoQTransport]
 
 About This Document
 
@@ -48,11 +48,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 4 April 2024.
+   This Internet-Draft will expire on 17 January 2025.
 
 Copyright Notice
 
-   Copyright (c) 2023 IETF Trust and the persons identified as the
+   Copyright (c) 2024 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -132,9 +132,9 @@ Table of Contents
 
 4.1.  CMAF Fragment to MOQT Group
 
-   A complete CMAF Fragment (see [CMAF] sect 6.6.1) into a single object
+   A complete CMAF Fragment (see [CMAF] sect 6.6.1) into a single Object
    within each group.  This results in there being a single GOP (Group
-   of Pictures) in the media object and a single media object per group.
+   of Pictures) in the media object and a single media object per Group.
 
 4.2.  CMAF Chunk to MOQT Object
 
@@ -147,7 +147,7 @@ Table of Contents
 
    CMAF switching sets are a set of one or more CMAF tracks (3.2.1),
    where each track is an alternative encoding of the same source
-   content, and are constrained to enable seamless track switching
+   content and are constrained to enable seamless track switching
    (3.3.9).  If such switching sets are to be transported over MOQT,
    irrespective of the mapping of CMAF Objects to MOQT Streams, then
    MOQT Group numbers MUST be media time-aligned between the MOQT
@@ -179,10 +179,11 @@ Table of Contents
 7.  Content protection and encryption
 
    The media object payloads MAY be encrypted.  If the content is
-   encryptedm then Common Encryption [CENC] MUST be used.  CMAF Track
-   encruption MUST be applied following [CENC] Sectino 8.2.  CENC with
-   'cbcs' mode (AES CBC with pattern encryption) is the RECOMMENDED
-   encryption method.
+   encrypted then Common Encryption [CENC] MUST be used.  CMAF Track
+   encruption MUST be applied following [CENC] Section 8.2. using either
+   CENC with 'cbcs' mode (AES 128-bit keys in Cipher-block chaining mode
+   and pattern encruption) or 'cenc' mode (AES 128-bit keys in Counter
+   Mode).
 
    Any license acquisition information used to acquire CMAF decryption
    key(s) MUST be signalled by the Streaming Format, and not in the CMAF
@@ -219,11 +220,11 @@ Table of Contents
               -- Part 12: ISO Base Media File Format", December 2015.
 
    [MoQTransport]
-              Curley, L., Pugin, K., Nandakumar, S., and V. Vasiliev,
-              "Media over QUIC Transport", Work in Progress, Internet-
-              Draft, draft-lcurley-moq-transport-00, 26 May 2023,
-              <https://datatracker.ietf.org/doc/html/draft-lcurley-moq-
-              transport-00>.
+              Curley, L., Pugin, K., Nandakumar, S., Vasiliev, V., and
+              I. Swett, "Media over QUIC Transport", Work in Progress,
+              Internet-Draft, draft-ietf-moq-transport-05, 8 July 2024,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-moq-
+              transport-05>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
