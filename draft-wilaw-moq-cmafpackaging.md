@@ -86,6 +86,9 @@ CMAF switching sets are a set of one or more CMAF tracks (3.2.1), where each tra
 # Initialization headers
 A CMAF header is sequence of CMAF constrained ISO BMFF boxes that do not reference any media samples (3.3.15), but are associated with a CMAF track (3.2.1) and necessary for the decoding of its CMAF fragments (3.1.1). The header for a given MOQT Track may be packaged in one of two ways:
 
+## Binary objects
+As a binary blob which is communicated to the client via a mechanism defined by the streaming format.
+
 ## MOQT Tracks
 As a MOQT Track. In this case the track MUST have only a single GROUP and a single OBJECT. The payload of the object MUST be the complete initialization header. The mapping of this initialization MOQT TRACK to the MOQT track which it initializes is defined by the streaming format.
 
