@@ -1157,7 +1157,10 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-initialization-headers" class="internal xref">Initialization headers</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.1">
-                <p id="section-toc.1-1.6.2.1.1"><a href="#section-6.1" class="auto internal xref">6.1</a>.  <a href="#name-moqt-tracks" class="internal xref">MOQT Tracks</a></p>
+                <p id="section-toc.1-1.6.2.1.1"><a href="#section-6.1" class="auto internal xref">6.1</a>.  <a href="#name-binary-objects" class="internal xref">Binary objects</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.2">
+                <p id="section-toc.1-1.6.2.2.1"><a href="#section-6.2" class="auto internal xref">6.2</a>.  <a href="#name-moqt-tracks" class="internal xref">MOQT Tracks</a></p>
 </li>
             </ul>
 </li>
@@ -1272,12 +1275,20 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#section-6" class="section-number selfRef">6. </a><a href="#name-initialization-headers" class="section-name selfRef">Initialization headers</a>
       </h2>
 <p id="section-6-1">A CMAF header is sequence of CMAF constrained ISO BMFF boxes that do not reference any media samples (3.3.15), but are associated with a CMAF track (3.2.1) and necessary for the decoding of its CMAF fragments (3.1.1). The header for a given MOQT Track may be packaged in one of two ways:<a href="#section-6-1" class="pilcrow">¶</a></p>
-<div id="moqt-tracks">
+<div id="binary-objects">
 <section id="section-6.1">
-        <h3 id="name-moqt-tracks">
-<a href="#section-6.1" class="section-number selfRef">6.1. </a><a href="#name-moqt-tracks" class="section-name selfRef">MOQT Tracks</a>
+        <h3 id="name-binary-objects">
+<a href="#section-6.1" class="section-number selfRef">6.1. </a><a href="#name-binary-objects" class="section-name selfRef">Binary objects</a>
         </h3>
-<p id="section-6.1-1">As a MOQT Track. In this case the track <span class="bcp14">MUST</span> have only a single GROUP and a single OBJECT. The payload of the object <span class="bcp14">MUST</span> be the complete initialization header. The mapping of this initialization MOQT TRACK to the MOQT track which it initializes is defined by the streaming format.<a href="#section-6.1-1" class="pilcrow">¶</a></p>
+<p id="section-6.1-1">As a binary blob which is communicated to the client via a mechanism defined by the streaming format.<a href="#section-6.1-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="moqt-tracks">
+<section id="section-6.2">
+        <h3 id="name-moqt-tracks">
+<a href="#section-6.2" class="section-number selfRef">6.2. </a><a href="#name-moqt-tracks" class="section-name selfRef">MOQT Tracks</a>
+        </h3>
+<p id="section-6.2-1">As a MOQT Track. In this case the track <span class="bcp14">MUST</span> have only a single GROUP and a single OBJECT. The payload of the object <span class="bcp14">MUST</span> be the complete initialization header. The mapping of this initialization MOQT TRACK to the MOQT track which it initializes is defined by the streaming format.<a href="#section-6.2-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>

@@ -74,7 +74,8 @@ Table of Contents
      4.2.  CMAF Chunk to MOQT Object
    5.  Switching sets
    6.  Initialization headers
-     6.1.  MOQT Tracks
+     6.1.  Binary objects
+     6.2.  MOQT Tracks
    7.  Content protection and encryption
    8.  Conventions and Definitions
    9.  Security Considerations
@@ -162,7 +163,12 @@ Table of Contents
    fragments (3.1.1).  The header for a given MOQT Track may be packaged
    in one of two ways:
 
-6.1.  MOQT Tracks
+6.1.  Binary objects
+
+   As a binary blob which is communicated to the client via a mechanism
+   defined by the streaming format.
+
+6.2.  MOQT Tracks
 
    As a MOQT Track.  In this case the track MUST have only a single
    GROUP and a single OBJECT.  The payload of the object MUST be the
