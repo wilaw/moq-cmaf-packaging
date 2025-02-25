@@ -5,7 +5,7 @@
 Media Over QUIC                                                   W. Law
 Internet-Draft                                                    Akamai
 Intended status: Informational                                 L. Curley
-Expires: 22 January 2025                                    21 July 2024
+Expires: 29 August 2025                                 25 February 2025
 
 
                     CMAF Packaging for moq-transport
@@ -48,11 +48,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 January 2025.
+   This Internet-Draft will expire on 29 August 2025.
 
 Copyright Notice
 
-   Copyright (c) 2024 IETF Trust and the persons identified as the
+   Copyright (c) 2025 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -222,9 +222,9 @@ Table of Contents
    [MoQTransport]
               Curley, L., Pugin, K., Nandakumar, S., Vasiliev, V., and
               I. Swett, "Media over QUIC Transport", Work in Progress,
-              Internet-Draft, draft-ietf-moq-transport-05, 8 July 2024,
-              <https://datatracker.ietf.org/doc/html/draft-ietf-moq-
-              transport-05>.
+              Internet-Draft, draft-ietf-moq-transport-08, 12 February
+              2025, <https://datatracker.ietf.org/doc/html/draft-ietf-
+              moq-transport-08>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
